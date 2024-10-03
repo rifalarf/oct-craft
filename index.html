@@ -5,21 +5,434 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Octa Craft</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
     <header>
+        <nav class="navbar navbar-expand-lg bg-color2 fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#product">Produk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimoni">Testimoni</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Kontak</a>
+                        </li>
 
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
+        <!-- home -->
+        <section id="home" class="bg-color2">
+            <div class="container align-content-center" style="height: 100vh;">
+                <div class="row row-gap-5 justify-content-center align-content-center ">
+                    <div class="col-12 col-md-4 align-content-center">
+                        <div class="d-flex flex-column color4 gap-1 banner">
+                            <div style="font-size: 5rem; line-height: 5.5rem;">
+                                <span class="fw-bold">Octa</span><br>
+                                <span class="fw-lighter">Craft</span>
+                            </div>
+                            <div style="font-size: 1.1rem;">Temukan hadiah istimewa yang membuat setiap momen lebih
+                                berkesan</div>
+                            <a href="#product" class="btn-view d-none d-md-block text-center">Lihat</a>
+                        </div>
+                    </div>
+                    <div class="col-2 d-block d-md-none d-flex justify-content-center">
+                        <a href="#footer" class="btn-view">Lihat</a>
+                    </div>
+                    <div class="col-12 col-md-4 text-center align-content-center">
+                        <img src="assets/bucket0.png" alt="bucket" class="bw img-banner img-fluid"
+                            style="max-width: 15rem;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 box-title">
+                        <span class="section-title display-6">Tentang</span>
+                        <span class="section-desc h3 ">— Bienvenue chez Octa Craft!</span>
+                    </div>
+                </div>
+                <div class="row row-gap-5 pt-5">
+                    <div class="col-12 col-md-6 text-center align-content-center">
+                        <img src="assets/octa.png" alt="photo" class="octa img-fluid">
+                    </div>
+                    <div class="col-12 col-md-6 align-content-center">
+                        <div class="h4 fw-bolder">Hai, Selamat Datang di Octa Craft!</div>
+                        <hr>
+                        <div class="h5 octa-desc">Kami di Octa Craft percaya bahwa setiap hadiah punya cerita dan makna
+                            tersendiri. Kami hadir untuk membantu Anda menemukan hadiah yang nggak cuma cantik, tapi
+                            juga penuh arti dan kenangan.</div>
+                        <br>
+                        <div class="h5 octa-desc">Dari bunga yang indah, camilan lezat, hingga paket hadiah yang unik,
+                            setiap
+                            produk kami dibuat dengan cinta dan perhatian. Kami ingin setiap momen spesial Anda menjadi
+                            lebih berkesan dengan sentuhan istimewa dari kami.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- product -->
+        <section id="product">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 box-title">
+                        <span class="section-title display-6">Produk</span>
+                        <span class="section-desc h3 ">— Pilihan hadiah yang terbaik</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 p-5">
+                        <div class="card mb-3" style="max-width: 720px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/bucket.png" class="img-fluid bw" alt="bucket">
+                                </div>
+                                <div class="col-md-8 align-content-center">
+                                    <div class="card-body">
+                                        <span class="h5 card-title">Bucket Bunga</span>
+                                        <p class="card-text">Rangkaian bunga yang indah dan elegan, bisa di-custom
+                                            sesuai keinginan Anda untuk menciptakan hadiah yang benar-benar personal dan
+                                            spesial.</p>
+                                        <div class="bbadge h6">Harga mulai dari 50k</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-5">
+                        <div class="card mb-3" style="max-width: 720px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/hampers.png" class="img-fluid bw" alt="bucket">
+                                </div>
+                                <div class="col-md-8 align-content-center">
+                                    <div class="card-body">
+                                        <span class="h5 card-title">Gift Snackbox</span>
+                                        <p class="card-text">Paket camilan lezat dalam kemasan yang menarik, bisa
+                                            di-custom sesuai selera dan kebutuhan Anda untuk memberikan kejutan yang
+                                            sempurna.</p>
+                                        <div class="bbadge h6">Harga mulai dari 50k</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-5">
+                        <div class="card mb-3" style="max-width: 720px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/box.png" class="img-fluid bw" alt="bucket">
+                                </div>
+                                <div class="col-md-8 align-content-center">
+                                    <div class="card-body">
+                                        <span class="h5 card-title">Produk Lainnya
+                                        </span>
+                                        <p class="card-text">Kami juga menawarkan berbagai produk menarik lainnya
+                                            seperti Photo Card, Photo Frame, Hampers, dan Parcell Balloon. Setiap produk
+                                            dirancang untuk menambah kesan istimewa pada setiap momen spesial Anda.</p>
+                                        <div class="bbadge h6">Harga mulai dari 50k</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="gallery">
+                            <swiper-container space-between="24" autoplay='{
+                                "delay": 2000,
+                                "disableOnInteraction": false
+                              }'
+                                breakpoints='{"576": {"slidesPerView": 2},"768": {"slidesPerView": 3},"992": {"slidesPerView": 4}}'>
+                                <swiper-slide>
+                                    <img src="https://picsum.photos/id/273/500/500" alt="Slide 1 image">
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <img src="https://picsum.photos/id/276/500/500" alt="Slide 2 image">
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <img src="https://picsum.photos/id/277/500/500" alt="Slide 3 image">
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <img src="https://picsum.photos/id/278/500/500" alt="Slide 4 image">
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <img src="https://picsum.photos/id/278/500/500" alt="Slide 4 image">
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <img src="https://picsum.photos/id/278/500/500" alt="Slide 4 image">
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <img src="https://picsum.photos/id/278/500/500" alt="Slide 4 image">
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <img src="https://picsum.photos/id/278/500/500" alt="Slide 4 image">
+                                </swiper-slide>
+                            </swiper-container>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimoni -->
+        <section id="testimoni">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 box-title">
+                        <span class="section-title display-6">Testimoni</span>
+                        <span class="section-desc h3 ">— Apa kata mereka?</span>
+                    </div>
+                </div>
+                <div class="row row-gap-5 pt-5">
+                    <div class="col-12 col-lg-4">
+                        <div class="testimoni-card flex-lg-column">
+                            <div>
+                                <img src="https://picsum.photos/200" class="avatar" alt="avatar">
+                            </div>
+                            <div class="testimoni-body text-center">
+                                <div class="name h5">Arfar</div>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div class="text h6">"Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Soluta,
+                                    molestias."</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="testimoni-card flex-lg-column">
+                            <div>
+                                <img src="https://picsum.photos/200" class="avatar" alt="avatar">
+                            </div>
+                            <div class="testimoni-body text-center">
+                                <div class="name h5">Arfar</div>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div class="text h6">"Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Soluta,
+                                    molestias."</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="testimoni-card flex-lg-column">
+                            <div>
+                                <img src="https://picsum.photos/200" class="avatar" alt="avatar">
+                            </div>
+                            <div class="testimoni-body text-center">
+                                <div class="name h5">Arfar</div>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div class="text h6">"Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Soluta,
+                                    molestias."</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- faq -->
+        <section id="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 box-title">
+                        <span class="section-title display-6">FAQ</span>
+                        <span class="section-desc h3">— Yang sering ditanyakan.</span>
+                    </div>
+                </div>
+                <div class="row row-gap-5 pt-5 justify-content-center">
+                    <div class="col-12 col-lg-9">
+                        <!-- accordion -->
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Bagaimana dengan kualitas produk yang ditawarkan oleh Octa Craft?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Saya sangat memperhatikan kualitas setiap produk yang
+                                        saya tawarkan. Semua bahan yang digunakan dipilih dengan cermat dan setiap
+                                        detail dikerjakan dengan penuh ketelitian. Saya ingin memastikan bahwa Anda
+                                        menerima hadiah yang tidak hanya cantik tetapi juga berkualitas tinggi dan tahan
+                                        lama.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Bagaimana cara melakukan pemesanan?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Anda bisa melakukan pemesanan melalui beberapa cara:
+                                        <ul>
+                                            <li>
+                                                <strong>WhatsApp:</strong> Hubungi saya di +62 812-1411-6618 untuk
+                                                pemesanan langsung.
+                                            </li>
+                                            <li>
+                                                <strong>Instagram:</strong> DM saya di @itsocta.craft untuk informasi
+                                                lebih lanjut.
+                                            </li>
+                                            <li>
+                                                <strong>Shopee:</strong> Untuk Anda yang berada di luar Garut, Anda bisa
+                                                memesan produk saya melalui Shopee. Cari toko saya di Shopee dengan nama
+                                                "Octa Craft" untuk melihat produk yang tersedia dan melakukan pemesanan.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Berapa lama waktu yang dibutuhkan untuk pemesanan?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Saya membutuhkan waktu maksimal 2 hari untuk memproses
+                                        setiap pemesanan. Jadi, pastikan Anda melakukan pemesanan setidaknya 2 hari
+                                        sebelum tanggal yang Anda inginkan. Hal ini untuk memastikan bahwa setiap hadiah
+                                        dibuat dengan sempurna dan siap dikirim tepat waktu.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 box-title">
+                        <span class="section-title display-6">Kontak</span>
+                        <span class="section-desc h3 ">— Hubungi kami!</span>
+                    </div>
+                </div>
+                <div class="row row-gap-5">
+                    <div class="col-12 col-md-6">
+                        <div class="h5"><span class="fw-bolder">Octa</span><span class="fw-lighter">Craft</span></div>
+                        <div class="h6">Temukan hadiah istimewa yang membuat setiap momen lebih berkesan</div>
+                        <div class="profile">
+                            <span class="h5 fw-bold">Lokasi</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
-    <footer>
-
+    <footer id="footer">
+        <div class="container">
+            <div class="row row-gap-3">
+                <div class="col-12 col-lg-5">
+                    <span class="h5 fw-bolder">Octa</span><span class="h5 fw-lighter">Craft</span>
+                    <div>Temukan hadiah istimewa yang membuat setiap momen lebih berkesan</div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <span class="h5 fw-bolder">Narahubung</span>
+                    <div>
+                        <div>
+                            <i class="bi ico-footer bi-telephone"></i><span class="h6"> +62 813-1250-3813</span>
+                        </div>
+                        <div>
+                            <i class="bi ico-footer bi-envelope-at"></i><span class="h6"> octacraft@gmail.com</span>
+                        </div>
+                        <div>
+                            <i class="bi ico-footer bi-whatsapp"></i><span class="h6"> +62 813-1250-3813</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <span class="h5 fw-bolder">Media Sosial</span>
+                    <div>
+                        <a href="https://www.instagram.com/itsocta.craft" class="h6 wrapper text-decoration-none"><i
+                                class="bi ico-footer bi-instagram"></i><span>itsocta.craft</span></a>
+                    </div>
+                    <div>
+                        <a href="https://shopee.co.id/octa.collection" class="h6 wrapper text-decoration-none">
+                            <i class="bi ico-footer bi-shop"></i><span> Octa Collection</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <hr>
+                    <span class="h6">© 2024 Reserved by <a href="https://www.linkedin.com/in/rifalarf/"
+                            class="h6 text-decoration-none fw-bolder ">Rifal Arif
+                            Rahman</a> |</span>
+                    <span class="h6">Powered by <a href="https://www.gamelab.com"
+                            class="h6 text-decoration-none fw-bolder ">Gamelab</a></span>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 </body>
 
 </html>
