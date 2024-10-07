@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Octa Craft</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_093554.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- icon -->
@@ -16,7 +18,10 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-color2 fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="">Logo</a>
+                <a class="navbar-brand" href="#">
+                    <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_093554.png"
+                        alt="bouquet" class="bw img-logo">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
                     aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,7 +43,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Kontak</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -63,9 +67,14 @@
                     <div class="col-2 d-block d-md-none d-flex justify-content-center">
                         <a href="#footer" class="btn-view">Lihat</a>
                     </div>
+                    <div class="col-2 d-none d-md-block">
+                        <img class="img-fluid opacity-25"
+                            src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_105749.png"
+                            alt="line" />
+                    </div>
                     <div class="col-12 col-md-4 text-center align-content-center">
                         <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20240930_202530.png"
-                            alt="bouquet" class="bw img-banner img-fluid" style="max-width: 12rem;">
+                            alt="bouquet" class="bw img-banner img-fluid">
                     </div>
                 </div>
             </div>
@@ -86,16 +95,42 @@
                             alt="photo" class="octa img-fluid">
                     </div>
                     <div class="col-12 col-md-6 align-content-center">
-                        <div class="h4 fw-bolder">Hai, Selamat Datang di Octa Craft!</div>
-                        <hr>
-                        <div class="h5 octa-desc">Kami di Octa Craft percaya bahwa setiap hadiah punya cerita dan makna
+                        <span class="h4 title-about fw-bolder lh-lg">Hai, Selamat Datang di Octa Craft!</span>
+                        <div class="h5 mt-2">Kami di Octa Craft percaya bahwa setiap hadiah punya cerita dan makna
                             tersendiri. Kami hadir untuk membantu Anda menemukan hadiah yang nggak cuma cantik, tapi
                             juga penuh arti dan kenangan.</div>
                         <br>
-                        <div class="h5 octa-desc">Dari bunga yang indah, camilan lezat, hingga paket hadiah yang unik,
+                        <div class="h5">Dari bunga yang indah, camilan lezat, hingga paket hadiah yang unik,
                             setiap
                             produk kami dibuat dengan cinta dan perhatian. Kami ingin setiap momen spesial Anda menjadi
                             lebih berkesan dengan sentuhan istimewa dari kami.</div>
+                    </div>
+                </div>
+
+                <div class="row row-gap-5 pt-5 center">
+                    <div class="col-12 d-flex">
+                        <span class="h3 mx-auto fw-bolder">Apa yang kami berikan?</span>
+                    </div>
+                    <div class="col-12 col-md-4 feature">
+                        <span class="h5 fw-bold lh-lg">
+                            Kustomisasi Produk
+                        </span>
+                        <div class="h6  py-2 m-0">Produk dapat di-custom sesuai keinginan dan kebutuhan pelanggan untuk
+                            menciptakan hadiah yang benar-benar personal.</div>
+                    </div>
+                    <div class="col-12 col-md-4 feature">
+                        <span class="h5 fw-bold lh-lg">
+                            Kualitas Terbaik
+                        </span>
+                        <div class="h6 py-2 m-0">Kami menggunakan bahan-bahan pilihan dan memastikan setiap detail
+                            dikerjakan dengan teliti untuk memberikan produk berkualitas tinggi.</div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <span class="h5 fw-bold lh-lg">
+                            Layanan Ramah dan Responsif
+                        </span>
+                        <div class="h6 py-2 m-0">Kami siap membantu dengan pelayanan yang hangat dan responsif melalui
+                            WhatsApp, Instagram, dan platform lainnya.</div>
                     </div>
                 </div>
             </div>
@@ -143,7 +178,7 @@
                                         <p class="card-text">Paket camilan lezat dalam kemasan yang menarik, bisa
                                             di-custom sesuai selera dan kebutuhan Anda untuk memberikan kejutan yang
                                             sempurna.</p>
-                                        <div class="bbadge h6">Harga mulai dari 50k</div>
+                                        <div class="bbadge h6">Harga mulai dari 40k</div>
                                     </div>
                                 </div>
                             </div>
@@ -163,7 +198,7 @@
                                         <p class="card-text">Kami juga menawarkan berbagai produk menarik lainnya
                                             seperti Photo Card, Photo Frame, Hamper, dan Parcell Balloon. Setiap produk
                                             dirancang untuk menambah kesan istimewa pada setiap momen spesial Anda.</p>
-                                        <div class="bbadge h6">Harga mulai dari 50k</div>
+                                        <div class="bbadge h6">Harga mulai dari 30k</div>
                                     </div>
                                 </div>
                             </div>
@@ -179,40 +214,50 @@
                               }'
                                 breakpoints='{"576": {"slidesPerView": 2},"768": {"slidesPerView": 3},"992": {"slidesPerView": 4}}'>
                                 <swiper-slide>
-                                    <img src="assets/1.jpg" alt="Slide 1 image">
+                                    <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075712.jpg"
+                                        alt="Slide 1 image">
                                 </swiper-slide>
                                 <swiper-slide>
-                                    <img src="assets/2.jpg" alt="Slide 2 image">
+                                    <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075731.jpg"
+                                        alt="Slide 2 image">
                                 </swiper-slide>
                                 <swiper-slide>
-                                    <img src="assets/3.jpg" alt="Slide 3 image">
+                                    <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075742.jpg"
+                                        alt="Slide 3 image">
                                 </swiper-slide>
                                 <swiper-slide>
-                                    <img src="assets/4.jpg" alt="Slide 4 image">
+                                    <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075756.png"
+                                        alt="Slide 4 image">
                                 </swiper-slide>
                                 <swiper-slide>
-                                    <img src="assets/5.jpg" alt="Slide 5 image">
+                                    <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075809.jpg"
+                                        alt="Slide 5 image">
                                 </swiper-slide>
                                 <swiper-slide>
-                                    <img src="assets/6.jpg" alt="Slide 6 image">
+                                    <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075826.jpg"
+                                        alt="Slide 6 image">
                                 </swiper-slide>
                                 <swiper-slide>
-                                    <img src="assets/7.jpg" alt="Slide 7 image">
+                                    <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075840.png"
+                                        alt="Slide 7 image">
                                 </swiper-slide>
                                 <swiper-slide>
-                                    <img src="assets/8.jpg" alt="Slide 8 image">
+                                    <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075854.png"
+                                        alt="Slide 8 image">
                                 </swiper-slide>
                                 <swiper-slide>
-                                    <img src="assets/9.jpg" alt="Slide 9 image">
+                                    <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075909.png"
+                                        alt="Slide 9 image">
                                 </swiper-slide>
                                 <swiper-slide>
-                                    <img src="assets/10.jpg" alt="Slide 10 image">
+                                    <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075925.png"
+                                        alt="Slide 10 image">
                                 </swiper-slide>
                             </swiper-container>
-
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -227,12 +272,13 @@
                 </div>
                 <div class="row row-gap-5 pt-5">
                     <div class="col-12 col-lg-4">
-                        <div class="testimoni-card flex-lg-column">
+                        <div class="testimoni-card flex-column">
                             <div>
-                                <img src="https://picsum.photos/200" class="avatar" alt="avatar">
+                                <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_095622.png"
+                                    class="avatar" alt="avatar">
                             </div>
                             <div class="testimoni-body text-center">
-                                <div class="name h5">Arfar</div>
+                                <div class="name h5">Ikbal</div>
                                 <div class="rating">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -240,19 +286,19 @@
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                 </div>
-                                <div class="text h6">"Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Soluta,
-                                    molestias."</div>
+                                <div class="text h6">"Hadiah dari Octa Craft selalu berhasil membuat momen spesial saya
+                                    jadi lebih berkesan. Kualitasnya luar biasa dan pelayanannya sangat ramah!"</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4">
-                        <div class="testimoni-card flex-lg-column">
+                        <div class="testimoni-card flex-column">
                             <div>
-                                <img src="https://picsum.photos/200" class="avatar" alt="avatar">
+                                <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_095622.png"
+                                    class="avatar" alt="avatar">
                             </div>
                             <div class="testimoni-body text-center">
-                                <div class="name h5">Arfar</div>
+                                <div class="name h5">Agisni</div>
                                 <div class="rating">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -260,19 +306,20 @@
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                 </div>
-                                <div class="text h6">"Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Soluta,
-                                    molestias."</div>
+                                <div class="text h6">"Saya sangat puas dengan kustomisasi Bucket Bunga yang saya pesan.
+                                    Hasilnya sangat cantik dan sesuai dengan yang saya inginkan. Terima kasih, Octa
+                                    Craft!"</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4">
-                        <div class="testimoni-card flex-lg-column">
+                        <div class="testimoni-card flex-column">
                             <div>
-                                <img src="https://picsum.photos/200" class="avatar" alt="avatar">
+                                <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_095622.png"
+                                    class="avatar" alt="avatar">
                             </div>
                             <div class="testimoni-body text-center">
-                                <div class="name h5">Arfar</div>
+                                <div class="name h5">Teh Riska</div>
                                 <div class="rating">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -280,9 +327,9 @@
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                 </div>
-                                <div class="text h6">"Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                    Soluta,
-                                    molestias."</div>
+                                <div class="text h6">"Gift Snackbox dari Octa Craft benar-benar lezat dan dikemas dengan
+                                    sangat menarik dan rapih. Pasti akan pesan lagi untuk acara berikutnya! Arigataou"
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -313,9 +360,9 @@
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Saya sangat memperhatikan kualitas setiap produk yang
-                                        saya tawarkan. Semua bahan yang digunakan dipilih dengan cermat dan setiap
-                                        detail dikerjakan dengan penuh ketelitian. Saya ingin memastikan bahwa Anda
+                                    <div class="accordion-body">Kami sangat memperhatikan kualitas setiap produk yang
+                                        Kami tawarkan. Semua bahan yang digunakan dipilih dengan cermat dan setiap
+                                        detail dikerjakan dengan penuh ketelitian. Kami ingin memastikan bahwa Anda
                                         menerima hadiah yang tidak hanya cantik tetapi juga berkualitas tinggi dan tahan
                                         lama.</div>
                                 </div>
@@ -333,16 +380,16 @@
                                     <div class="accordion-body">Anda bisa melakukan pemesanan melalui beberapa cara:
                                         <ul>
                                             <li>
-                                                <strong>WhatsApp:</strong> Hubungi saya di +62 812-1411-6618 untuk
+                                                <strong>WhatsApp:</strong> Hubungi Kami di +62 812-1411-6618 untuk
                                                 pemesanan langsung.
                                             </li>
                                             <li>
-                                                <strong>Instagram:</strong> DM saya di @itsocta.craft untuk informasi
+                                                <strong>Instagram:</strong> DM Kami di @itsocta.craft untuk informasi
                                                 lebih lanjut.
                                             </li>
                                             <li>
                                                 <strong>Shopee:</strong> Untuk Anda yang berada di luar Garut, Anda bisa
-                                                memesan produk saya melalui Shopee. Cari toko saya di Shopee dengan nama
+                                                memesan produk Kami melalui Shopee. Cari toko Kami di Shopee dengan nama
                                                 "Octa Craft" untuk melihat produk yang tersedia dan melakukan pemesanan.
                                             </li>
                                         </ul>
@@ -359,7 +406,7 @@
                                 </h2>
                                 <div id="flush-collapseThree" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Saya membutuhkan waktu maksimal 2 hari untuk memproses
+                                    <div class="accordion-body">Kami membutuhkan waktu maksimal 2 hari untuk memproses
                                         setiap pemesanan. Jadi, pastikan Anda melakukan pemesanan setidaknya 2 hari
                                         sebelum tanggal yang Anda inginkan. Hal ini untuk memastikan bahwa setiap hadiah
                                         dibuat dengan sempurna dan siap dikirim tepat waktu.</div>
@@ -402,9 +449,9 @@
                                     </li>
                                 </ul>
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Masukan email"
+                                    <input type="text" class="form-control rounded-0" placeholder="Masukan email"
                                         aria-label="Masukan email" aria-describedby="button-addon2">
-                                    <button class="btn btn-outline-secondary" type="button"
+                                    <button class="btn btn-outline-secondary rounded-0" type="button"
                                         id="button-addon2">Langganan</button>
                                 </div>
                             </div>
@@ -465,7 +512,7 @@
                     <hr>
                     <span class="h6">© 2024 Reserved by <a href="https://www.linkedin.com/in/rifalarf/"
                             class="h6 text-decoration-none fw-bolder ">Rifal Arif
-                            Rahman</a> |</span>
+                            Rahman</a> <span class="d-none d-md-inline-block">|</span></span>
                     <span class="h6">Powered by <a href="https://www.gamelab.com"
                             class="h6 text-decoration-none fw-bolder ">Gamelab</a></span>
                 </div>
