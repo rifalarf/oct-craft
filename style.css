@@ -5,6 +5,23 @@
 body {
     background-color: #FAF7F0 !important;
 }
+.parallax {
+    /* The image used */
+    background-image: url("https://www.gamelab.id/uploads/report/project_18907/18907_20241007_150638.png");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.txt-shadow {
+    text-shadow: 2px 3px #00000055!important;
+}
 
 /* btn */
 .btn-view {
@@ -28,7 +45,6 @@ body {
 }
 
 .section-title {
-    font-weight: 900;
     color: #4A4947;
     width: fit-content;
     padding-bottom: 3px;
@@ -50,7 +66,6 @@ body {
 
 /* home */
 #home {
-    background-color: #D8D2C2;
     height: 100vh;
 }
 
@@ -227,6 +242,13 @@ footer {
     .img-banner {
     max-width: 8rem!important;
     }
+    .title-home {
+        font-size:3rem!important;
+        line-height: 3rem!important;
+    }
+    .subtitle-home {
+        font-size: 1rem!important;
+    } 
 
 }
 
