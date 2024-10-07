@@ -9,15 +9,16 @@
     <link rel="icon" type="image/x-icon"
         href="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_093554.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="style.css">
     <!-- icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+<body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-color2 fixed-top">
+        <nav id="navbar-example2" class="navbar navbar-expand-lg bg-color2 fixed-top" data-aos="fade-down">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_093554.png"
@@ -42,25 +43,31 @@
                             <a class="nav-link" href="#testimoni">Testimoni</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#contact">Kontak</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
     </header>
-    <main>
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -20%"
+        data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
         <!-- home -->
-        <section id="home">
+        <section id="home" class="bg-color2">
             <div class="container align-content-center" style="height: 100vh;">
                 <div class="row row-gap-5 justify-content-center align-content-center ">
-                    <div class="col-12 col-md-4 align-content-center">
+                    <div class="col-12 col-md-4 align-content-center" data-aos="fade-right">
                         <div class="d-flex flex-column color4 gap-1 banner">
-                            <div style="font-size: 5rem; line-height: 5.5rem;">
+                            <div class="title-home" style="font-size: 5rem; line-height: 5.5rem;">
                                 <span class="fw-bold">Octa</span><br>
                                 <span class="fw-lighter">Craft</span>
                             </div>
-                            <div style="font-size: 1.1rem;">Temukan hadiah istimewa yang membuat setiap momen lebih
+                            <div class="subtitle-home" style="font-size: 1.1rem;">Temukan hadiah istimewa yang membuat
+                                setiap momen lebih
                                 berkesan</div>
                             <a href="#product" class="btn-view d-none d-md-block text-center">Lihat</a>
                         </div>
@@ -68,12 +75,12 @@
                     <div class="col-2 d-block d-md-none d-flex justify-content-center">
                         <a href="#footer" class="btn-view">Lihat</a>
                     </div>
-                    <div class="col-2 d-none d-md-block">
+                    <div class="col-2 d-none d-md-block" data-aos="fade-up">
                         <img class="img-fluid opacity-25"
                             src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_105749.png"
                             alt="line" />
                     </div>
-                    <div class="col-12 col-md-4 text-center align-content-center">
+                    <div class="col-12 col-md-4 text-center align-content-center" data-aos="fade-left">
                         <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20240930_202530.png"
                             alt="bouquet" class="bw img-banner img-fluid">
                     </div>
@@ -82,72 +89,65 @@
         </section>
 
         <!-- about -->
-        <section id="about" data-aos="fade-up">
+        <section id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 box-title">
+                    <div class="col-12 box-title" data-aos="fade-up">
                         <span class="section-title display-6">Tentang</span>
                         <span class="section-desc h3 ">— Bienvenue chez Octa Craft!</span>
                     </div>
                 </div>
                 <div class="row row-gap-5 pt-5">
-                    <div class="col-12 col-md-6 text-center align-content-center">
+                    <div class="col-12 col-md-6 text-center align-content-center" data-aos="fade-up">
                         <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241001_101827.png"
                             alt="photo" class="octa img-fluid">
                     </div>
-                    <div class="col-12 col-md-6 align-content-center">
+                    <div class="col-12 col-md-6 align-content-center" data-aos="fade-up">
                         <span class="h4 title-about fw-bolder lh-lg">Hai, Selamat Datang di Octa Craft!</span>
                         <div class="h5 mt-2">Kami di Octa Craft percaya bahwa setiap hadiah punya cerita dan makna
                             tersendiri. Kami hadir untuk membantu Anda menemukan hadiah yang nggak cuma cantik, tapi
                             juga penuh arti dan kenangan.</div>
                         <br>
-                        <div class="h5">Dari bunga yang indah, camilan lezat, hingga paket hadiah yang unik,
-                            setiap
+                        <div class="h5">Dari bunga yang indah, camilan lezat, hingga paket hadiah yang unik, setiap
                             produk kami dibuat dengan cinta dan perhatian. Kami ingin setiap momen spesial Anda menjadi
                             lebih berkesan dengan sentuhan istimewa dari kami.</div>
                     </div>
                 </div>
 
                 <div class="row row-gap-5 pt-5 center">
-                    <div class="col-12 d-flex">
+                    <div class="col-12 d-flex" data-aos="fade-up">
                         <span class="h3 mx-auto fw-bolder">Apa yang kami berikan?</span>
                     </div>
-                    <div class="col-12 col-md-4 feature">
-                        <span class="h5 fw-bold lh-lg">
-                            Kustomisasi Produk
-                        </span>
-                        <div class="h6  py-2 m-0">Produk dapat di-custom sesuai keinginan dan kebutuhan pelanggan untuk
+                    <div class="col-12 col-md-4 feature" data-aos="fade-up">
+                        <span class="h5 fw-bold lh-lg">Kustomisasi Produk</span>
+                        <div class="h6 py-2 m-0">Produk dapat di-custom sesuai keinginan dan kebutuhan pelanggan untuk
                             menciptakan hadiah yang benar-benar personal.</div>
                     </div>
-                    <div class="col-12 col-md-4 feature">
-                        <span class="h5 fw-bold lh-lg">
-                            Kualitas Terbaik
-                        </span>
+                    <div class="col-12 col-md-4 feature" data-aos="fade-up" data-aos-delay="100">
+                        <span class="h5 fw-bold lh-lg">Kualitas Terbaik</span>
                         <div class="h6 py-2 m-0">Kami menggunakan bahan-bahan pilihan dan memastikan setiap detail
                             dikerjakan dengan teliti untuk memberikan produk berkualitas tinggi.</div>
                     </div>
-                    <div class="col-12 col-md-4">
-                        <span class="h5 fw-bold lh-lg">
-                            Layanan Ramah dan Responsif
-                        </span>
+                    <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <span class="h5 fw-bold lh-lg">Layanan Ramah dan Responsif</span>
                         <div class="h6 py-2 m-0">Kami siap membantu dengan pelayanan yang hangat dan responsif melalui
-                            WhatsApp, Instagram, dan platform lainnya.</div>
+                            WA, Instagram, dan platform lainnya.</div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- product -->
-        <section id="product" data-aos="fade-up">
+        <section id="product">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 box-title">
+                    <div class="col-12 box-title" data-aos="fade-up">
                         <span class="section-title display-6">Produk</span>
                         <span class="section-desc h3 ">— Pilihan hadiah yang terbaik</span>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 p-5">
+                    <div class="col-12 p-5" data-aos="fade-up">
                         <div class="card mb-3" style="max-width: 720px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -166,7 +166,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 p-5">
+                    <div class="col-12 p-5" data-aos="fade-up" data-aos-delay="100">
                         <div class="card mb-3" style="max-width: 720px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -185,7 +185,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 p-5">
+                    <div class="col-12 p-5" data-aos="fade-up" data-aos-delay="200">
                         <div class="card mb-3" style="max-width: 720px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -194,8 +194,7 @@
                                 </div>
                                 <div class="col-md-8 align-content-center">
                                     <div class="card-body">
-                                        <span class="h5 card-title">Produk Lainnya
-                                        </span>
+                                        <span class="h5 card-title">Produk Lainnya</span>
                                         <p class="card-text">Kami juga menawarkan berbagai produk menarik lainnya
                                             seperti Photo Card, Photo Frame, Hamper, dan Parcell Balloon. Setiap produk
                                             dirancang untuk menambah kesan istimewa pada setiap momen spesial Anda.</p>
@@ -214,43 +213,43 @@
                                 "disableOnInteraction": false
                               }'
                                 breakpoints='{"576": {"slidesPerView": 2},"768": {"slidesPerView": 3},"992": {"slidesPerView": 4}}'>
-                                <swiper-slide>
+                                <swiper-slide data-aos="fade-up">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075712.jpg"
                                         alt="Slide 1 image">
                                 </swiper-slide>
-                                <swiper-slide>
+                                <swiper-slide data-aos="fade-up" data-aos-delay="100">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075731.jpg"
                                         alt="Slide 2 image">
                                 </swiper-slide>
-                                <swiper-slide>
+                                <swiper-slide data-aos="fade-up" data-aos-delay="200">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075742.jpg"
                                         alt="Slide 3 image">
                                 </swiper-slide>
-                                <swiper-slide>
+                                <swiper-slide data-aos="fade-up" data-aos-delay="300">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075756.png"
                                         alt="Slide 4 image">
                                 </swiper-slide>
-                                <swiper-slide>
+                                <swiper-slide data-aos="fade-up" data-aos-delay="400">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075809.jpg"
                                         alt="Slide 5 image">
                                 </swiper-slide>
-                                <swiper-slide>
+                                <swiper-slide data-aos="fade-up" data-aos-delay="500">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075826.jpg"
                                         alt="Slide 6 image">
                                 </swiper-slide>
-                                <swiper-slide>
+                                <swiper-slide data-aos="fade-up" data-aos-delay="600">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075840.png"
                                         alt="Slide 7 image">
                                 </swiper-slide>
-                                <swiper-slide>
+                                <swiper-slide data-aos="fade-up" data-aos-delay="700">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075854.png"
                                         alt="Slide 8 image">
                                 </swiper-slide>
-                                <swiper-slide>
+                                <swiper-slide data-aos="fade-up" data-aos-delay="800">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075909.png"
                                         alt="Slide 9 image">
                                 </swiper-slide>
-                                <swiper-slide>
+                                <swiper-slide data-aos="fade-up" data-aos-delay="900">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075925.png"
                                         alt="Slide 10 image">
                                 </swiper-slide>
@@ -259,20 +258,19 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
 
         <!-- testimoni -->
-        <section id="testimoni" data-aos="fade-up">
+        <section id="testimoni">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 box-title">
+                    <div class="col-12 box-title" data-aos="fade-up">
                         <span class="section-title display-6">Testimoni</span>
                         <span class="section-desc h3 ">— Apa kata mereka?</span>
                     </div>
                 </div>
                 <div class="row row-gap-5 pt-5">
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4" data-aos="fade-up">
                         <div class="testimoni-card flex-column">
                             <div>
                                 <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_095622.png"
@@ -292,7 +290,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="testimoni-card flex-column">
                             <div>
                                 <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_095622.png"
@@ -313,7 +311,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="testimoni-card flex-column">
                             <div>
                                 <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_095622.png"
@@ -339,10 +337,10 @@
         </section>
 
         <!-- faq -->
-        <section id="faq" data-aos="fade-up">
+        <section id="faq">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 box-title">
+                    <div class="col-12 box-title" data-aos="fade-up">
                         <span class="section-title display-6">FAQ</span>
                         <span class="section-desc h3">— Yang sering ditanyakan.</span>
                     </div>
@@ -351,7 +349,7 @@
                     <div class="col-12 col-lg-9">
                         <!-- accordion -->
                         <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item">
+                            <div class="accordion-item" data-aos="fade-up">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseOne" aria-expanded="false"
@@ -368,7 +366,7 @@
                                         lama.</div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseTwo" aria-expanded="false"
@@ -397,7 +395,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseThree" aria-expanded="false"
@@ -420,10 +418,10 @@
         </section>
 
         <!-- contact -->
-        <section id="contact" data-aos="fade-up">
+        <section id="contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 box-title">
+                    <div class="col-12 box-title" data-aos="fade-up">
                         <span class="section-title display-6">Kontak</span>
                         <span class="section-desc h3 ">— Hubungi kami!</span>
                     </div>
@@ -431,15 +429,14 @@
                 <div class="row row-gap-5 pt-5 justify-content-center">
                     <div class="col-12 col-lg-9 p-4">
                         <div class="contact row">
-                            <div class="col-12 col-lg-6 d-flex my-auto flex-column align-items-start p-4">
+                            <div class="col-12 col-lg-6 d-flex my-auto flex-column align-items-start p-4"
+                                data-aos="fade-up">
                                 <div class="h5 contact-title fw-bolder">OctaCraft</div>
                                 <div class="h6">Temukan hadiah istimewa yang membuat setiap momen lebih berkesan.
                                 </div>
                                 <div class="h5 contact-title fw-bolder">Lokasi</div>
                                 <div class="h6 gap">Jl. Raya Genteng No.6, Margalaksana, Kec. Cilawu, Kabupaten
-                                    Garut,
-                                    Jawa
-                                    Barat 44181</div>
+                                    Garut, Jawa Barat 44181</div>
                                 <div class="h5 contact-title fw-bolder">Hubungi</div>
                                 <ul>
                                     <li>
@@ -456,7 +453,8 @@
                                         id="button-addon2">Langganan</button>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6 d-flex justify-content-center overflow-hidden p-4">
+                            <div class="col-12 col-lg-6 d-flex justify-content-center overflow-hidden p-4"
+                                data-aos="fade-up">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.0742242055894!2d107.90732609999999!3d-7.2614652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68ae3368760579%3A0x8b6ed432fa23aad5!2sJl.%20Raya%20Genteng%20No.6%2C%20Margalaksana%2C%20Kec.%20Cilawu%2C%20Kabupaten%20Garut%2C%20Jawa%20Barat%2044181!5e1!3m2!1sen!2sid!4v1727922254694!5m2!1sen!2sid"
                                     style="border:0;" class="border" allowfullscreen="" width="600" height="400"
@@ -474,14 +472,14 @@
     <footer id="footer">
         <div class="container">
             <div class="row row-gap-3">
-                <div class="col-12 col-lg-5">
+                <div class="col-12 col-lg-5" data-aos="fade-up">
                     <span class="h5 fw-bolder">Octa</span><span class="h5 fw-lighter">Craft</span>
                     <div>Temukan hadiah istimewa yang membuat setiap momen lebih berkesan. <br>
                         Dari bunga yang indah, camilan lezat, hingga paket hadiah yang unik, setiap produk kami dibuat
                         dengan cinta dan perhatian.
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                     <span class="h5 fw-bolder">Narahubung</span>
                     <div>
                         <div>
@@ -495,7 +493,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-3">
+                <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-delay="200">
                     <span class="h5 fw-bolder">Media Sosial</span>
                     <div>
                         <a href="https://www.instagram.com/itsocta.craft" class="h6 wrapper text-decoration-none"><i
