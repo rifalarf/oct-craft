@@ -4,7 +4,26 @@
 
 body {
     background-color: #FAF7F0 !important;
+    position: relative;
 }
+
+.floating-btn {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+.floating-btn-wa {
+    background-color: #1ba14f;
+    padding: .6rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.floating-btn-wa:hover {
+    background-color: #167c3d
+}
+
 .parallax {
     background-image: url("https://www.gamelab.id/uploads/report/project_18907/18907_20241007_153757.png");
     min-height: auto;
@@ -13,7 +32,15 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+.parallax2 {
+    background-image: url("https://www.gamelab.id/uploads/report/project_18907/18907_20241030_112156.png");
+    min-height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 .txt-shadow {
     text-shadow: 2px 3px #00000055!important;
 }
@@ -28,7 +55,6 @@ body {
     max-width: 7rem;
     border: #4A4947 1px solid;
     box-shadow: 6px 6px 0px 0px rgba(74, 73, 71, 1);
-
     font-size: larger;
 }
 .btn-view:hover {
@@ -80,9 +106,22 @@ body {
 }
 .img-banner {
     max-width: 18rem!important;
+    transition: .2s;
+}
+.img-banner:hover {
+    scale: 1.2;
+    rotate: 5deg;
+    transition: .2s;
 }
 .img-logo {
     max-width: 3.5rem;
+    rotate: 0deg;
+    transition: .2s;
+}
+.img-logo:hover {
+    max-width: 3.5rem;
+    transition: .2s;
+    rotate: 45deg;
 }
 
 /* about */
@@ -114,6 +153,7 @@ body {
 .feature {
     background-color: #D8D2C2;
     text-align: center;
+    padding: .3rem;
 }
 
 .feature .md-mode,
@@ -127,6 +167,7 @@ body {
 
 .feature:hover {
     background-color: #4A4947;
+    cursor: pointer;
 }
 
 .feature:hover .md-mode,
@@ -136,30 +177,75 @@ body {
 
 /* produk */
 
-.card {
-    border-radius: 0 !important;
-    border: none !important;
-    background-color: #FAF7F0 !important;
+.box-card {
+    position: relative;
+    border: #D8D2C2 1px solid;
+    background-color: #D8D2C2;
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
 }
 
-.card-title, .title-about, .feature-desc {
-    border-bottom: #B17457 3px solid;
-    font-weight: bold;
-    padding-bottom: .2rem;
+.img-card {
+    position: absolute;
+    max-width: 20rem;
+    filter: grayscale(100%) opacity(50%);
+    transition: .3s;
 }
 
-.card-text {
-    padding: .5rem 0;
-    text-align: justify;
-    justify-content: none;
+.box-card:hover {
+    background-color: #4A4947;
+    cursor: pointer;
 }
+
+.box-card:hover .text-card .h3, 
+.box-card:hover .text-card .h6 {
+    color: #D8D2C2 !important;
+}
+
+.box-card:hover .img-card {
+        scale: 1.1;
+        filter: none;
+        transition: .3s;
+}
+
 
 .bbadge {
+    position: absolute;
     background-color: #B17457;
-    color: #FAF7F0 !important;
-    width: fit-content;
-    padding: .3rem;
-    box-shadow: 6px 6px 0px 0px rgba(74, 73, 71, 1);
+    text-align: center;
+    width: 100%;
+    padding: .4rem;
+    bottom: 0;
+}
+
+.bbadge:hover {
+    background-color: #272727;
+}
+
+.btn-lihat {
+    text-decoration: none;
+
+}
+
+/* modal */
+.modal-content {
+    background-color: #D8D2C2!important;
+}
+
+.modal-header {
+    border-bottom: solid #4a49473d 0.5px;
+}
+.modal-footer {
+    border-top: solid #4a49473d 0.5px;
+}
+
+.bbadge .h5 {
+    color: #D8D2C2;
+}
+
+.box-card:hover {
+
 }
 
 swiper-slide {
@@ -175,12 +261,17 @@ swiper-container::part(container) {
     width: auto;
     height: auto;
     box-shadow: 6px 6px 0px 0px rgba(74, 73, 71, 1);
+    border-radius: 0.5rem;
 }
 
 swiper-slide img {
     width: 100%; /* Sesuaikan dengan lebar kontainer */
     height: 100%; /* Sesuaikan dengan tinggi kontainer */
     object-fit: contain; /* Pastikan gambar menjaga rasio aspek */
+}
+
+swiper-slide img:hover {
+    cursor: pointer;
 }
 
 
@@ -223,9 +314,13 @@ swiper-slide img {
     font-weight: 600;
 }
 
+.gallery{
+    background-color: #FAF7F0;
+}
+
 /* faq */
 .accordion, .contact {
-    background: url("https://www.gamelab.id/uploads/report/project_18907/18907_20241017_162148.png");
+    background-color: #FAF7F0;
     border: #D8D2C2 1px solid !important;
     box-shadow: 6px 6px 0px 0px rgba(74, 73, 71, 1) !important;
 }
@@ -261,8 +356,6 @@ footer {
     color: #4a4947;
 }
 
-
-
 /*  media query */
 @media (max-width: 576px) {
     .box-title, .bbadge {
@@ -274,16 +367,7 @@ footer {
     .section-title, .title-feature {
         border-bottom: #B17457 6px solid;
     }
-    .img-banner {
-        max-width: 8rem!important;
-    }
-    .title-home {
-        font-size:3rem!important;
-        line-height: 3rem!important;
-    }
-    .subtitle-home {
-        font-size: 1rem!important;
-    }
+    
 }
 
 @media (max-width: 768px) {
@@ -298,25 +382,25 @@ footer {
         border-right: 0;
         border-bottom: 6px solid #FAF7F0 !important;
     }
-    .card-title {
+    .img-banner {
+        max-width: 8rem!important;
+    }
+    .title-home {
+        font-size:4rem!important;
+        line-height: 3rem!important;
+    }
+    .subtitle-home {
+        font-size: 1rem!important;
     }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-    #product .card {
-        margin: 0 auto;
-    }
+
 }
 
 @media (min-width: 993px) {
-    #product .row .col-12:nth-child(1) .card,
-    #product .row .col-12:nth-child(3) .card {
-        margin-right: auto;
-    }
 
-    #product .row .col-12:nth-child(2) .card {
-        margin-left: auto;
-    }
+
 }
 
 
