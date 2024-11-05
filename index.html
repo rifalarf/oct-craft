@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -187,20 +188,62 @@
                             </div>
                             <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241003_074144.png"
                                 alt="bucket" class="img-card">
-                            <div class="bbadge">
+                            <div class="bbadge" data-bs-toggle="modal" data-bs-target="#bucketboxModal">
                                 <div class="h5 fw-bold btn-lihat">Lihat Produk</div>
                             </div>
-                            <div class="modal fade" id="snackboxModal" tabindex="-1"
-                                aria-labelledby="snackboxModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="bucketboxModal" tabindex="-1"
+                                aria-labelledby="bucketboxModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="snackboxModalLabel">Gift Snackbox</h1>
+                                            <h1 class="modal-title fs-5" id="bucketboxModalLabel">Bucket</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body">
-
+                                        <div class="modal-body modal-dialog-scrollable">
+                                            <!-- isi -->
+                                            <div class="modal-item flex">
+                                                <div class="item-img d-inline-block">
+                                                    <img class="rounded-2"
+                                                        src="https://www.gamelab.id/uploads/report/project_18907/18907_20241105_075922.jpg"
+                                                        alt="item 1" style="max-width: 100px;">
+                                                </div>
+                                                <div class="body-item d-inline-block ps-2">
+                                                    <h5 class="fw-bold">Bucket Bunga</h5>
+                                                    <h6 class="fw-bold p-1 rounded-2"
+                                                        style="width: fit-content; background-color: #B6B1A5;">Rp.
+                                                        30.000
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                            <div class="modal-item flex">
+                                                <div class="item-img d-inline-block">
+                                                    <img class="rounded-2"
+                                                        src="https://www.gamelab.id/uploads/report/project_18907/18907_20241105_103126.jpg"
+                                                        alt="item 1" style="max-width: 100px;">
+                                                </div>
+                                                <div class="body-item d-inline-block ps-2">
+                                                    <h5 class="fw-bold">Bucket Makanan</h5>
+                                                    <h6 class="fw-bold p-1 rounded-2"
+                                                        style="width: fit-content; background-color: #B6B1A5;">Rp.
+                                                        50.000
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                            <div class="modal-item flex">
+                                                <div class="item-img d-inline-block">
+                                                    <img class="rounded-2"
+                                                        src="https://www.gamelab.id/uploads/report/project_18907/18907_20241003_074805.png"
+                                                        alt="item 1" style="max-width: 100px;">
+                                                </div>
+                                                <div class="body-item d-inline-block ps-2">
+                                                    <h5 class="fw-bold">Custom Bucket</h5>
+                                                    <h6 class="fw-bold p-1 rounded-2"
+                                                        style="width: fit-content; background-color: #B6B1A5;">Rp.
+                                                        -
+                                                    </h6>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
@@ -224,6 +267,67 @@
                             <div class="bbadge" data-bs-toggle="modal" data-bs-target="#snackboxModal">
                                 <div class="h5 fw-bold btn-lihat">Lihat Produk</div>
                             </div>
+                            <div class="modal fade" id="snackboxModal" tabindex="-1"
+                                aria-labelledby="snackboxModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="snackboxModalLabel">Gift Snackbox</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body modal-dialog-scrollable">
+                                            <!-- isi -->
+                                            <div class="modal-item flex">
+                                                <div class="item-img d-inline-block">
+                                                    <img class="rounded-2"
+                                                        src="https://www.gamelab.id/uploads/report/project_18907/18907_20241105_075922.jpg"
+                                                        alt="item 1" style="max-width: 100px;">
+                                                </div>
+                                                <div class="body-item d-inline-block ps-2">
+                                                    <h5 class="fw-bold">Snack 1</h5>
+                                                    <h6 class="fw-bold p-1 rounded-2"
+                                                        style="width: fit-content; background-color: #B6B1A5;">Rp.
+                                                        30.000
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                            <div class="modal-item flex">
+                                                <div class="item-img d-inline-block">
+                                                    <img class="rounded-2"
+                                                        src="https://www.gamelab.id/uploads/report/project_18907/18907_20241105_103126.jpg"
+                                                        alt="item 1" style="max-width: 100px;">
+                                                </div>
+                                                <div class="body-item d-inline-block ps-2">
+                                                    <h5 class="fw-bold">Snack 2</h5>
+                                                    <h6 class="fw-bold p-1 rounded-2"
+                                                        style="width: fit-content; background-color: #B6B1A5;">Rp.
+                                                        50.000
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                            <div class="modal-item flex">
+                                                <div class="item-img d-inline-block">
+                                                    <img class="rounded-2"
+                                                        src="https://www.gamelab.id/uploads/report/project_18907/18907_20241003_074805.png"
+                                                        alt="item 1" style="max-width: 100px;">
+                                                </div>
+                                                <div class="body-item d-inline-block ps-2">
+                                                    <h5 class="fw-bold">Custom Snack</h5>
+                                                    <h6 class="fw-bold p-1 rounded-2"
+                                                        style="width: fit-content; background-color: #B6B1A5;">Rp.
+                                                        -
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 p-3">
@@ -238,8 +342,69 @@
                             </div>
                             <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241003_074805.png"
                                 alt="bucket" class="img-card">
-                            <div class="bbadge">
+                            <div class="bbadge" data-bs-toggle="modal" data-bs-target="#otherModal">
                                 <div class="h5 fw-bold btn-lihat">Lihat Produk</div>
+                            </div>
+                            <div class="modal fade" id="otherModal" tabindex="-1" aria-labelledby="otherModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="otherModalLabel">Lainnya</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body modal-dialog-scrollable">
+                                            <!-- isi -->
+                                            <div class="modal-item flex">
+                                                <div class="item-img d-inline-block">
+                                                    <img class="rounded-2"
+                                                        src="https://www.gamelab.id/uploads/report/project_18907/18907_20241105_133020.jpg"
+                                                        alt="item 1" style="max-width: 100px;">
+                                                </div>
+                                                <div class="body-item d-inline-block ps-2">
+                                                    <h5 class="fw-bold">Lightbox</h5>
+                                                    <h6 class="fw-bold p-1 rounded-2"
+                                                        style="width: fit-content; background-color: #B6B1A5;">Rp.
+                                                        30.000
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                            <div class="modal-item flex">
+                                                <div class="item-img d-inline-block">
+                                                    <img class="rounded-2"
+                                                        src="https://www.gamelab.id/uploads/report/project_18907/18907_20241105_133104.jpg"
+                                                        alt="item 1" style="max-width: 100px;">
+                                                </div>
+                                                <div class="body-item d-inline-block ps-2">
+                                                    <h5 class="fw-bold">Photobox</h5>
+                                                    <h6 class="fw-bold p-1 rounded-2"
+                                                        style="width: fit-content; background-color: #B6B1A5;">Rp.
+                                                        50.000
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                            <div class="modal-item flex">
+                                                <div class="item-img d-inline-block">
+                                                    <img class="rounded-2"
+                                                        src="https://www.gamelab.id/uploads/report/project_18907/18907_20241003_074805.png"
+                                                        alt="item 1" style="max-width: 100px;">
+                                                </div>
+                                                <div class="body-item d-inline-block ps-2">
+                                                    <h5 class="fw-bold">Random Snack</h5>
+                                                    <h6 class="fw-bold p-1 rounded-2"
+                                                        style="width: fit-content; background-color: #B6B1A5;">Rp.
+                                                        -
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -247,51 +412,91 @@
                 <div class="row">
                     <div class="col-12 pt-5">
                         <div class="gallery">
+                            <!-- Swiper Container -->
                             <swiper-container space-between="24" autoplay='{
                                 "delay": 2000,
                                 "disableOnInteraction": false}'
                                 breakpoints='{"576": {"slidesPerView": 2},"768": {"slidesPerView": 3},"992": {"slidesPerView": 4}}'>
+
+                                <!-- Swiper Slides -->
                                 <swiper-slide data-aos="fade-up">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075712.jpg"
-                                        alt="Slide 1 image">
+                                        alt="Slide 1 image" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        onclick="changeModalImage(this)">
                                 </swiper-slide>
+
                                 <swiper-slide data-aos="fade-up" data-aos-delay="100">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075731.jpg"
-                                        alt="Slide 2 image">
+                                        alt="Slide 2 image" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        onclick="changeModalImage(this)">
                                 </swiper-slide>
+
                                 <swiper-slide data-aos="fade-up" data-aos-delay="200">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075742.jpg"
-                                        alt="Slide 3 image">
+                                        alt="Slide 3 image" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        onclick="changeModalImage(this)">
                                 </swiper-slide>
+
                                 <swiper-slide data-aos="fade-up" data-aos-delay="300">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075756.png"
-                                        alt="Slide 4 image">
+                                        alt="Slide 4 image" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        onclick="changeModalImage(this)">
                                 </swiper-slide>
+
                                 <swiper-slide data-aos="fade-up" data-aos-delay="400">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075809.jpg"
-                                        alt="Slide 5 image">
+                                        alt="Slide 5 image" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        onclick="changeModalImage(this)">
                                 </swiper-slide>
+
                                 <swiper-slide data-aos="fade-up" data-aos-delay="500">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075826.jpg"
-                                        alt="Slide 6 image">
+                                        alt="Slide 6 image" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        onclick="changeModalImage(this)">
                                 </swiper-slide>
+
                                 <swiper-slide data-aos="fade-up" data-aos-delay="600">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075840.png"
-                                        alt="Slide 7 image">
+                                        alt="Slide 7 image" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        onclick="changeModalImage(this)">
                                 </swiper-slide>
+
                                 <swiper-slide data-aos="fade-up" data-aos-delay="700">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075854.png"
-                                        alt="Slide 8 image">
+                                        alt="Slide 8 image" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        onclick="changeModalImage(this)">
                                 </swiper-slide>
+
                                 <swiper-slide data-aos="fade-up" data-aos-delay="800">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075909.png"
-                                        alt="Slide 9 image">
+                                        alt="Slide 9 image" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        onclick="changeModalImage(this)">
                                 </swiper-slide>
+
                                 <swiper-slide data-aos="fade-up" data-aos-delay="900">
                                     <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_075925.png"
-                                        alt="Slide 10 image">
+                                        alt="Slide 10 image" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                        onclick="changeModalImage(this)">
                                 </swiper-slide>
+
                             </swiper-container>
+
+                            <!-- Modal Bootstrap 5 -->
+                            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="imageModalLabel">Lihat Gambar</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-center">
+                                            <img id="modalImage" src=" alt=" Image Preview" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -308,72 +513,135 @@
                     </div>
                 </div>
                 <div class="row row-gap-5 pt-5">
-                    <div class="col-12 col-lg-4" data-aos="fade-up">
-                        <div class="testimoni-card flex-column rounded-3 text-center">
-                            <div class="testimoni-head">
-                                <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_095622.png"
-                                    class="avatar" alt="avatar">
-                            </div>
-                            <div class="testimoni-body">
-                                <div class="fw-bold h4">Ikbal</div>
-                                <div class="rating">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
+                    <div class="col-12 col-lg-9 mx-auto" data-aos="fade-up" data-aos-delay="100">
+                        <swiper-container space-between="24" slides-per-view="1" autoplay='{
+                            "delay": 2000,
+                            "disableOnInteraction": false}' ,
+                            breakpoints='{"576": {"slidesPerView": 1},"768": {"slidesPerView": 2},"992": {"slidesPerView": 3}}'>
+                            <!-- Swiper Slide 1 -->
+                            <swiper-slide>
+                                <div class="testimoni-card flex-column rounded-3 text-center">
+                                    <div class="testimoni-head">
+                                        <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_095622.png"
+                                            class="avatar" alt="avatar">
+                                    </div>
+                                    <div class="testimoni-body">
+                                        <div class="fw-bold h4">Ikbal</div>
+                                        <div class="rating">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <div class="text h6">
+                                            "Hadiah dari Octa Craft selalu berhasil
+                                            membuat momen spesial saya
+                                            jadi lebih berkesan. Kualitasnya luar biasa dan pelayanannya ramah!"
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text h6"><span class="fs-3 fw-bolder">"</span>Hadiah dari Octa Craft selalu
-                                    berhasil membuat momen spesial saya
-                                    jadi lebih berkesan. Kualitasnya luar biasa dan pelayanannya ramah!<span
-                                        class="fs-3 fw-bolder">"</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="testimoni-card flex-column rounded-3 text-center">
-                            <div class="testimoni-head text-center">
-                                <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_095622.png"
-                                    class="avatar" alt="avatar">
-                            </div>
-                            <div class="testimoni-body text-center">
-                                <div class="fw-bold h4">Agisni</div>
-                                <div class="rating">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
+                            </swiper-slide>
+
+                            <!-- Swiper Slide 2 -->
+                            <swiper-slide>
+                                <div class="testimoni-card flex-column rounded-3 text-center">
+                                    <div class="testimoni-head">
+                                        <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_095622.png"
+                                            class="avatar" alt="avatar">
+                                    </div>
+                                    <div class="testimoni-body">
+                                        <div class="fw-bold h4">Agisni</div>
+                                        <div class="rating">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <div class="text h6">
+                                            "Saya sangat puas dengan kustomisasi
+                                            Bucket Bunga yang saya pesan.
+                                            Hasilnya sangat cantik dan sesuai dengan yang saya inginkan."
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text h6"><span class="fs-3 fw-bolder">"</span>Saya sangat puas dengan
-                                    kustomisasi Bucket Bunga yang saya pesan.
-                                    Hasilnya sangat cantik dan sesuai dengan yang saya inginkan.<span
-                                        class="fs-3 fw-bolder">"</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="testimoni-card flex-column rounded-3 text-center">
-                            <div class="testimoni-head text-center">
-                                <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_095622.png"
-                                    class="avatar" alt="avatar">
-                            </div>
-                            <div class="testimoni-body text-center">
-                                <div class="fw-bold h4">Teh Riska</div>
-                                <div class="rating">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
+                            </swiper-slide>
+
+                            <!-- Swiper Slide 3 -->
+                            <swiper-slide>
+                                <div class="testimoni-card flex-column rounded-3 text-center">
+                                    <div class="testimoni-head">
+                                        <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_095622.png"
+                                            class="avatar" alt="avatar">
+                                    </div>
+                                    <div class="testimoni-body">
+                                        <div class="fw-bold h4">Teh Riska</div>
+                                        <div class="rating">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <div class="text h6">
+                                            "Gift Snackbox dari Octa Craft
+                                            benar-benar lezat dan dikemas dengan
+                                            sangat menarik dan rapih. Pasti akan pesan lagi untuk acara berikutnya!"
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text h6"><span class="fs-3 fw-bolder">"</span>Gift Snackbox dari Octa Craft
-                                    benar-benar lezat dan dikemas dengan
-                                    sangat menarik dan rapih. Pasti akan pesan lagi untuk acara berikutnya!
-                                    <span class="fs-3 fw-bolder">"</span>
+                            </swiper-slide>
+
+                            <!-- Swiper Slide 4 -->
+                            <swiper-slide>
+                                <div class="testimoni-card flex-column rounded-3 text-center">
+                                    <div class="testimoni-head">
+                                        <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_095622.png"
+                                            class="avatar" alt="avatar">
+                                    </div>
+                                    <div class="testimoni-body">
+                                        <div class="fw-bold h4">Nurul</div>
+                                        <div class="rating">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="text h6">
+                                            "Pengalaman belanja di sini sangat
+                                            menyenangkan! Bucket Bunga yang saya pesan benar-benar cantik dan sesuai
+                                            dengan ekspektasi."
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            </swiper-slide>
+
+                            <!-- Swiper Slide 5 -->
+                            <swiper-slide>
+                                <div class="testimoni-card flex-column rounded-3 text-center">
+                                    <div class="testimoni-head">
+                                        <img src="https://www.gamelab.id/uploads/report/project_18907/18907_20241007_095622.png"
+                                            class="avatar" alt="avatar">
+                                    </div>
+                                    <div class="testimoni-body">
+                                        <div class="fw-bold h4">Agung</div>
+                                        <div class="rating">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <div class="text h6">
+                                            "Saya sangat terkesan dengan Gift Snackbox yang saya terima. Camilannya enak
+                                            dan kemasannya sangat rapi. Layanan yang ramah dan terbaik"
+                                        </div>
+                                    </div>
+                                </div>
+                            </swiper-slide>
+                        </swiper-container>
                     </div>
                 </div>
             </div>
@@ -501,7 +769,7 @@
                                 data-aos="fade-up">
                                 <iframe class="rounded-3"
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.0742242055894!2d107.90732609999999!3d-7.2614652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68ae3368760579%3A0x8b6ed432fa23aad5!2sJl.%20Raya%20Genteng%20No.6%2C%20Margalaksana%2C%20Kec.%20Cilawu%2C%20Kabupaten%20Garut%2C%20Jawa%20Barat%2044181!5e1!3m2!1sen!2sid!4v1727922254694!5m2!1sen!2sid"
-                                    style="border:0;" class="border" allowfullscreen="" width="600" height="400"
+                                    style="border:0;" class="border" allowfullscreen=" width=" 600" height="400"
                                     loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
@@ -570,8 +838,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         AOS.init();
+
+        function changeModalImage(img) {
+            document.getElementById("modalImage").src = img.src;
+        }
+
+        const swiper = new Swiper('swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
     </script>
 </body>
 
