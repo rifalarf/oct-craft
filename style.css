@@ -68,8 +68,6 @@ body {
 .itemJual {
   border: #4a4947 1px solid;
   box-shadow: 6px 6px 0px 0px rgba(74, 73, 71, 1);
-  width: 100% !important;
-  display: block !important;
 }
 
 .itemJual:hover {
@@ -414,6 +412,12 @@ footer {
   .title-feature {
     border-bottom: #b17457 6px solid;
   }
+  .body-variant {
+    text-align: left!important;
+  }
+  .information {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -438,6 +442,34 @@ footer {
   .subtitle-home {
     font-size: 1rem !important;
   }
+}
+
+.variant {
+  border: #4a494780 2px solid;
+  border-radius: 5px;
+  background-color: #faf7f060;
+}
+
+.regular {
+  background-color: #57b172;
+}
+.special {
+  background-color: #b15757;
+}
+.mini {
+  background-color: #5790b1;
+}
+
+.information {
+  border: 2px solid rgb(11, 70, 11);
+  background-color: #1ba14e79;
+  border-radius: 5px;
+  padding: 5px;
+  margin: -4px;
+}
+
+.variant:hover {
+  filter: brightness(80%);
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
